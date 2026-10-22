@@ -1,0 +1,17 @@
+{
+  "passed": 10,
+  "checks": [
+    "Hero starts one coordinated sequence",
+    "Hidden-tab pause preserves completed beats and resumes remaining motion",
+    "Sequence cleans up to the complete default scene",
+    "Motion does not automatically loop after scrolling",
+    "Replay is available on request",
+    "Language change safely completes a running sequence",
+    "Resize safely completes a running sequence",
+    "Reduced motion has the complete scene and no moving elements",
+    "Hero remains readable without JavaScript",
+    "No animation exceptions"
+  ],
+  "failures": [],
+  "pageErrors": []
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "foreground": "purple",
+    "background": "white",
+    "contrast": 10.81
+  },
+  {
+    "foreground": "ink",
+    "background": "white",
+    "contrast": 15.97
+  },
+  {
+    "foreground": "muted",
+    "background": "white",
+    "contrast": 5.85
+  },
+  {
+    "foreground": "muted",
+    "background": "lilac",
+    "contrast": 4.93
+  },
+  {
+    "foreground": "purple",
+    "background": "peach",
+    "contrast": 7.45
+  }
+]

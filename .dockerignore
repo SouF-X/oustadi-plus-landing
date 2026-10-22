@@ -1,0 +1,12 @@
+.git
+node_modules
+.env
+.env.*
+.openai
+.netlify
+.vercel
+qa
+docs
+scripts
+*.md
+*.log

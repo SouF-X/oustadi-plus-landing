@@ -1,0 +1,48 @@
+/* Motion carries one lesson from its familiar classroom into a student's phone. */
+.stage-board,.scene-phone{animation:none}
+.hero-inner{padding-block:62px 60px}
+.hero-description{font-size:15px;line-height:1.9}
+.hero-actions .button,.hero-actions .text-link{font-size:12px}
+.board-header{font-size:10px;padding:13px 17px 7px}
+.board-footer{font-size:9px}
+.board-clock{align-self:center}
+html[dir=rtl] .board-footer{direction:ltr}
+html[dir=rtl] .board-footer>[data-i18n]{direction:rtl}
+.minimum{transform-box:fill-box;transform-origin:center}
+.scene-provider>strong{font-size:10px;font-weight:650}
+.scene-realization{padding-inline-end:15px}
+.realization-check{position:absolute;inset-inline-end:-4px;bottom:0;width:24px;height:24px;overflow:visible;transform:rotate(-8deg)}
+.realization-check path{stroke:var(--purple);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;fill:none}
+.scene-phone-lesson{position:relative}
+.scene-phone-lesson>small{font-size:6px}
+.scene-file{font-size:7px}
+.scene-replay{position:absolute;z-index:4;left:16px;bottom:15px;display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:var(--purple);cursor:pointer;transition:background-color 180ms}
+.scene-replay svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.scene-replay:hover{background:white}
+.scene-replay:disabled{cursor:default}
+.lesson-transfer{position:absolute;left:0;top:0;z-index:5;margin:0;pointer-events:none;transform-origin:center;box-shadow:0 12px 28px #291e2b20;overflow:hidden;contain:paint;will-change:transform,opacity}
+.lesson-transfer>svg{display:block}
+.journey-panel,.learning-panel{position:relative}
+.journey-panel .mini-progress i{transform-origin:left center}
+html[dir=rtl] .journey-panel .mini-progress i{transform-origin:right center}
+.identity-grid p.fine,.offline-section .honest-note{font-size:12px;line-height:1.8}
+.identity-grid h2{margin-top:0}
+.journey-tabs button b{font-size:12px}
+.journey-tabs button{min-height:80px}
+.journey-footer p,#reset-demo{font-size:12px}
+.example-label{font-size:11px}
+.provider-top strong,.provider-resource strong{font-size:12px}
+.provider-lesson a{font-size:12px}
+.provider-nav{font-size:11px}
+.provider-monogram{font-size:11px}
+.footer p,.closing-inner>div:last-child>p{font-size:12px}
+.footer button{font-size:12px}
+.brand-field input,dialog input,dialog textarea{caret-color:var(--purple)}
+.phone-status,.scene-phone-status,.board-clock{font-variant-numeric:tabular-nums}
+
+@media(min-width:1550px){.hero-inner{padding-block:78px 70px}}
+@media(max-width:1120px){.hero-inner{padding-block:55px}.board-header{font-size:9px;padding-inline:12px}.board-footer{font-size:8px}.scene-provider>strong{font-size:9px}}
+@media(max-width:850px){.hero-inner,html[dir=rtl] .hero-inner{padding-block:45px}.hero-description{font-size:14px}.board-header{font-size:8px;padding:9px}.board-footer{font-size:7px}.scene-provider>strong{font-size:8px}.scene-file{font-size:6px}.realization-check{width:19px;height:19px}.identity-grid p.fine,.offline-section .honest-note{font-size:11px}}
+@media(max-width:640px){.hero-inner,html[dir=rtl] .hero-inner{padding-block:35px 30px;gap:35px}.hero-rhythm{margin-top:26px}.hero-description{font-size:14px}.board-header{font-size:9px;padding:12px 11px 7px}.board-footer{font-size:8px}.scene-provider>strong{font-size:9px}.scene-file{font-size:6px}.scene-replay{bottom:9px;left:11px}.realization-check{width:20px;height:20px}.journey-tabs button{min-height:92px;justify-content:center}.journey-footer{flex-direction:column;align-items:stretch;gap:4px}.journey-footer p{padding-top:0}#reset-demo{align-self:flex-end}}
+@media(max-width:359px){.hero-actions,html[dir=rtl] .hero-actions{flex-wrap:wrap;gap:8px 18px}.board-header{font-size:8px}.board-footer{font-size:7px}.scene-replay{bottom:3px;left:7px}.scene-provider>strong{font-size:8px}.scene-file{font-size:5px}.realization-check{width:18px;height:18px}}
+@media(prefers-reduced-motion:reduce){.lesson-transfer{display:none}.scene-replay{display:none}}

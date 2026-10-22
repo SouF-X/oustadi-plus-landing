@@ -1,0 +1,11 @@
+{
+  "npmBuild": true,
+  "customDomainAndSubpathMetadata": true,
+  "htmlAndAssetsServe": true,
+  "fontMime": true,
+  "sourceFilesNotServed": true,
+  "headAndMethodHandling": true,
+  "dockerComposeConfiguration": true,
+  "dockerImageRun": false,
+  "dockerNote": "Docker Desktop engine was not running during local verification."
+}

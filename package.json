@@ -1,0 +1,14 @@
+{
+  "name": "oustadi-plus-landing",
+  "version": "1.0.0",
+  "private": true,
+  "description": "The French and Moroccan Darija landing page for Oustadi Plus.",
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

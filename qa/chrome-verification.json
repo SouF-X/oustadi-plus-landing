@@ -1,0 +1,86 @@
+{
+  "viewports": [
+    {
+      "contentHeight": 662,
+      "dialogHeight": 662,
+      "dialogWidth": 349,
+      "horizontalOverflow": false,
+      "language": "fr",
+      "scrollbar": "none",
+      "viewport": [
+        391,
+        844
+      ]
+    },
+    {
+      "contentHeight": 579,
+      "dialogHeight": 537,
+      "dialogWidth": 278,
+      "horizontalOverflow": false,
+      "language": "fr",
+      "scrollbar": "none",
+      "viewport": [
+        320,
+        569
+      ]
+    },
+    {
+      "contentHeight": 540,
+      "dialogHeight": 540,
+      "dialogWidth": 880,
+      "horizontalOverflow": false,
+      "language": "fr",
+      "scrollbar": "none",
+      "viewport": [
+        1025,
+        768
+      ]
+    },
+    {
+      "contentHeight": 622,
+      "dialogHeight": 622,
+      "dialogWidth": 349,
+      "horizontalOverflow": false,
+      "language": "ar-MA",
+      "scrollbar": "none",
+      "viewport": [
+        391,
+        844
+      ]
+    },
+    {
+      "contentHeight": 569,
+      "dialogHeight": 537,
+      "dialogWidth": 278,
+      "horizontalOverflow": false,
+      "language": "ar-MA",
+      "scrollbar": "none",
+      "viewport": [
+        320,
+        569
+      ]
+    },
+    {
+      "contentHeight": 550,
+      "dialogHeight": 550,
+      "dialogWidth": 880,
+      "horizontalOverflow": false,
+      "language": "ar-MA",
+      "scrollbar": "none",
+      "viewport": [
+        1025,
+        768
+      ]
+    }
+  ],
+  "requiredFields": true,
+  "roleSelection": true,
+  "downloadedBriefValid": true,
+  "smallScreenKeyboardAccess": true,
+  "escapeCloses": true,
+  "focusRestored": true,
+  "backgroundScrollLockedWhileOpen": true,
+  "brandedScrollbar": true,
+  "headerDivider": true,
+  "browserErrors": []
+}

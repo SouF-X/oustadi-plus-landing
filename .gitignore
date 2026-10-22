@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.vercel/
+.netlify/
+.openai/
+.DS_Store
+Thumbs.db
+qa/*.png
+qa/verified-pilot-brief.txt
+*.tar.gz
+*.log

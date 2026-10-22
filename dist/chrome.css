@@ -1,0 +1,80 @@
+/* Quiet page chrome, with the same mulberry/lilac material as the brand. */
+html{scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:var(--purple) #f7f2f8}
+.header{border-bottom:1px solid var(--line)}
+*::-webkit-scrollbar{width:10px;height:10px}
+*::-webkit-scrollbar-track{background:#f7f2f8}
+*::-webkit-scrollbar-thumb{background:var(--purple);border:3px solid #f7f2f8;border-radius:20px}
+*::-webkit-scrollbar-thumb:hover{background:#4d193a}
+*::-webkit-scrollbar-button{display:none;width:0;height:0}
+*::-webkit-scrollbar-corner{background:#f7f2f8}
+@supports selector(::-webkit-scrollbar){html{scrollbar-width:auto;scrollbar-color:auto}}
+
+/* Keep native keyboard/touch scrolling, without a second visible scrollbar. */
+html:has(dialog[open]){overflow:hidden}
+dialog{max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);overflow-x:hidden;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:none}
+dialog::-webkit-scrollbar{display:none;width:0;height:0}
+
+#brief-dialog{padding:0;width:calc(100% - 48px);max-width:880px;border-radius:16px;background:var(--white)}
+#brief-dialog .dialog-close{top:12px;inset-inline-end:12px;display:grid;place-items:center;z-index:1;border-radius:50%;background:var(--lilac);color:var(--purple)}
+#brief-dialog .dialog-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round}
+.brief-layout{display:grid;grid-template-columns:.85fr 1.15fr;min-width:0}
+.brief-intro{display:flex;flex-direction:column;justify-content:space-between;gap:50px;background:var(--lilac);padding:48px 32px 32px;min-width:0}
+.brief-intro h2{font-size:46px;line-height:1.05;letter-spacing:-.035em;margin:0;color:var(--purple)}
+.brief-intro p{font-size:14px;line-height:1.85;color:var(--muted);max-width:26ch;margin-top:20px}
+.brief-signature{display:flex;align-items:center;gap:10px;font:650 20px/1 Bricolage,sans-serif;color:var(--purple);direction:ltr;align-self:flex-start}
+.brief-signature img{width:32px;height:32px}
+.brief-signature sup{font-size:10px;margin-inline-start:3px}
+.brief-form-side{padding:60px 32px 28px;min-width:0}
+#brief-form{gap:14px}
+#brief-form label,#brief-form legend{font-size:12px;font-weight:650;line-height:1.6}
+#brief-form input:not([type=radio]),#brief-form select,#brief-form textarea{font-size:14px;min-height:46px;border-radius:8px;background:var(--white);border-color:var(--line);font-weight:500}
+#brief-form textarea{min-height:70px;resize:vertical}
+#brief-form input:not([type=radio]):focus,#brief-form select:focus,#brief-form textarea:focus{border-color:var(--purple);outline:2px solid var(--purple);outline-offset:-2px}
+#brief-form .form-pair{gap:14px}
+.brief-role{border:0;min-width:0;padding:0;margin:0}
+.brief-role legend{margin-bottom:7px}
+.brief-role-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+#brief-form .brief-role-option{position:relative;display:flex;align-items:center;justify-content:center;min-height:46px;padding:9px 10px;border:1px solid var(--line);border-radius:8px;cursor:pointer;color:var(--purple);background:var(--white);font-weight:650;transition:background-color 150ms,color 150ms,border-color 150ms}
+#brief-form .brief-role-option:has(input:checked){background:var(--purple);border-color:var(--purple);color:white}
+#brief-form .brief-role-option:has(input:focus-visible){outline:2px solid var(--purple);outline-offset:3px}
+#brief-form input[type=radio]{position:absolute;width:1px;height:1px;min-height:0;padding:0;margin:-1px;border:0;clip-path:inset(50%);overflow:hidden;white-space:nowrap}
+.brief-form-footer{display:grid;gap:11px;margin-top:4px}
+#brief-form .button{width:100%;justify-content:space-between;min-height:48px;font-size:13px;background:var(--purple);color:white;padding-inline:18px}
+.brief-download-icon{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+.brief-privacy{font-size:12px;line-height:1.75;color:var(--muted);margin:0}
+#brief-result{font-size:12px;line-height:1.75;margin:0}
+html[dir=rtl] .brief-intro h2{font-size:40px;line-height:1.5;letter-spacing:0}
+html[dir=rtl] .brief-signature{align-self:flex-end}
+
+@media(max-width:760px){
+  #brief-dialog{width:calc(100% - 32px)}
+  .brief-layout{grid-template-columns:1fr}
+  .brief-intro{padding:25px 24px 22px;gap:0}
+  .brief-intro h2{font-size:32px;line-height:1.12;padding-inline-end:36px}
+  .brief-intro p{font-size:13px;max-width:none;margin-top:10px;line-height:1.7}
+  .brief-signature{display:none}
+  .brief-form-side{padding:22px 24px 24px}
+  #brief-form{gap:12px}
+  html[dir=rtl] .brief-intro h2{font-size:29px;line-height:1.5}
+}
+@media(max-width:359px){
+  .brief-intro{padding:24px 20px 19px}
+  .brief-intro h2{font-size:29px}
+  .brief-form-side{padding:20px}
+  #brief-form .form-pair{grid-template-columns:1fr 1fr;gap:10px}
+  #brief-form .form-pair label{font-size:11px}
+  #brief-form .brief-role-option{padding-inline:5px;font-size:11px}
+}
+@media(max-width:760px) and (max-height:700px){
+  .brief-intro{padding-block:20px 18px}
+  .brief-intro p{display:none}
+  .brief-form-side{padding-block:18px}
+  #brief-form{gap:10px}
+  #brief-form input:not([type=radio]),#brief-form select,#brief-form .brief-role-option{min-height:44px}
+  #brief-form textarea{min-height:60px}
+  .brief-privacy{font-size:11px;line-height:1.65}
+}
+@media(forced-colors:active){
+  html{scrollbar-color:auto}
+  #brief-form .brief-role-option:has(input:checked){outline:2px solid Highlight;outline-offset:-3px}
+}
